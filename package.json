@@ -1,0 +1,22 @@
+{
+  "name": "nodejs-tool-service",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon --config ./src/configs/nodemon.json",
+    "debug": "node --inspect-brk ./src",
+    "prod": "pm2 start ./src/configs/pm2.json"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "koa": "^2.13.1",
+    "koa-router": "^10.0.0",
+    "require-dir": "^1.2.0"
+  },
+  "devDependencies": {
+    "chalk": "^4.1.0",
+    "nodemon": "^2.0.7"
+  }
+}
